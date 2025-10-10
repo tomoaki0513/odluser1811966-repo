@@ -7,8 +7,8 @@ jobs:
     name: build-cli
     runs-on: ubuntu-latest
     env: 
-      IMAGE_NAME: <image name>
-      PROJECT_KEY: <project key> # Set the desired project to run the cli scanning with
+      IMAGE_NAME: redis:latest
+      PROJECT_KEY: image-security-test
     
     steps:
     # checks-out your repository under $GitHub_WORKSPACE, so your workflow can access it.
