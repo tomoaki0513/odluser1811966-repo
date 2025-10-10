@@ -27,4 +27,4 @@ jobs:
         set +e
         apt update && apt install -y curl
         curl -sfL 'https://raw.GitHubusercontent.com/orcasecurity/orca-cli/main/install.sh' | bash
-        orca-cli -p "${PROJECT_KEY}" image scan ${IMAGE_NAME} --api-token "${{ secrets.ORCA_SECURITY_API_TOKEN }}"
+        orca-cli -p "${PROJECT_KEY}" image scan ${IMAGE_NAME}
